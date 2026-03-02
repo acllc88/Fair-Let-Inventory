@@ -1,5 +1,5 @@
 import { useState, useEffect, useRef } from 'react';
-import { FLILogoIcon, FLILogoMono } from './components/FLILogos';
+import { FLILogoIcon, FLILogoIconWhite, FLILogoMono } from './components/FLILogos';
 import {
   ShieldCheck, CheckMark, VerifiedDoc, Checklist, MagnifyingGlass,
   Report, Analytics, LocationPin, House, Building, HouseLocation,
@@ -60,8 +60,8 @@ function Header() {
       <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
         <div className="flex h-16 sm:h-18 items-center justify-between">
           <a href="#" className="flex items-center gap-2.5 group">
-            <div className="relative flex h-9 w-9 shrink-0 items-center justify-center rounded-xl bg-gradient-to-br from-fli-red to-fli-red-dark shadow-md shadow-fli-red/20 transition-transform group-hover:scale-105">
-              <FLILogoIcon size={24} className="absolute inset-0 m-auto" />
+            <div className="relative flex h-9 w-9 shrink-0 items-center justify-center rounded-xl bg-white border border-gray-200/80 shadow-sm transition-transform group-hover:scale-105">
+              <FLILogoIcon size={32} className="drop-shadow-sm" />
             </div>
             <span className="text-[15px] font-semibold text-fli-dark tracking-tight whitespace-nowrap">Fair Let Inventory</span>
           </a>
@@ -676,7 +676,9 @@ function Footer() {
         <div className="flex flex-col gap-8 md:flex-row md:justify-between">
           <div className="shrink-0">
             <div className="flex items-center gap-2.5">
-              <FLILogoIcon size={32} />
+              <div className="flex h-9 w-9 shrink-0 items-center justify-center rounded-xl bg-white/10 border border-white/10">
+                <FLILogoIconWhite size={32} />
+              </div>
               <span className="text-sm font-semibold text-white tracking-tight">Fair Let Inventory</span>
             </div>
             <p className="mt-3 text-sm text-white/50 max-w-xs">

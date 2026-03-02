@@ -48,4 +48,15 @@ export const FLILogoIcon: React.FC<{ className?: string; size?: number }> = ({ c
   </svg>
 );
 
+export const FLILogoIconWhite: React.FC<{ className?: string; size?: number }> = ({ className = '', size = 80 }) => (
+  <svg viewBox="0 0 100 100" width={size} height={size} className={className} xmlns="http://www.w3.org/2000/svg">
+    <circle cx="42" cy="42" r="30" fill="none" stroke="rgba(255,255,255,0.8)" strokeWidth="5" />
+    <path d="M28 50 L42 34 L56 50" fill="none" stroke="rgba(255,255,255,0.95)" strokeWidth="4" strokeLinecap="round" strokeLinejoin="round" />
+    <rect x="33" y="46" width="18" height="12" fill="none" stroke="rgba(255,255,255,0.7)" strokeWidth="3" rx="1" />
+    <rect x="39" y="50" width="6" height="8" fill="rgba(255,255,255,0.4)" rx="1" />
+    <line x1="63" y1="63" x2="82" y2="82" stroke="rgba(255,255,255,0.8)" strokeWidth="6" strokeLinecap="round" />
+    <path d="M50 40 L54 44 L62 32" fill="none" stroke={GREEN} strokeWidth="3" strokeLinecap="round" strokeLinejoin="round" />
+  </svg>
+);
+
 export default FLILogoFull;
